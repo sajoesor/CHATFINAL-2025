@@ -48,7 +48,7 @@ app.use('/api/chat', chatRoutes);
 // Ruta de estado
 app.get('/', (req, res) => {
   res.json({
-    message: 'API SOMMER operativa',
+    message: 'API JOFRAN',
     status: 'OK'
   });
 });
