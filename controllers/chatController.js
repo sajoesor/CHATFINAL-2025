@@ -248,7 +248,7 @@ export const generateAndSendSummary = async (userId, PORT) => {
       `🗨️ ${conv.prompt}\n💬 ${conv.response}`
     ).join('\n\n') || 'No hubo conversación registrada hoy.';
 
-    const { data: users } = await axios.get(`https://sommer-back-steel.vercel.app/api/chat/usuarios`);
+    const { data: users } = await axios.get(`https://chatfinal-2025.vercel.app/api/chat/usuarios`);
     //const { data: users } = await axios.get(`http://localhost:${PORT}/api/chat/usuarios`);
     const user = users.find(u =>
       u._id === userId || u._id?.toString() === userId || u.correo === userId
